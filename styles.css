@@ -1,7 +1,35 @@
 body {
-	background-color:#d1f4ff;
+	background-color:#d1f7ff;
 }
 
 h2 {
 	color: #006d8f;
+}
+
+
+.topnav {
+  background-color: #00a0c2;
+  overflow: hidden;
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: #00add1;
+  color: white;
 }
