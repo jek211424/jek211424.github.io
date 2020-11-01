@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>JeksProgrammingStuff - Project</title>
+	<link rel="icon" href="../icon.png" type="image/png" />
+	<link rel="stylesheet" href="../styles.css">
+</head>
+	<body>
+	<script src="menu.js"></script><noscript><h3>Please enable javascript to use some features of this site.</h3></noscript>
+	
+	<audio id="yee">
+  		<source src="../yee.mp3" type="audio/mpeg">
+  		Your browser is not supported
+	</audio>
+	
+	<h1>Jek messing around with javascript</h1>
+	<h3>(aka the yee machine)</h3>
+	<button class="yeebutton" type="button" onclick="playAudio()">Yee</button>
+	<script>
+	var x = document.getElementById("yee"); 
+	function playAudio() { 
+  		x.play(); 
+	} 
+
+	</script>
+
+	</body>
+</html>

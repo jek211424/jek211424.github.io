@@ -19,6 +19,21 @@ h3 {
 	text-align: center;
 }
 
+h1 {
+	color: #297bff;
+	text-align: center;
+}
+
+.yeebutton {
+    margin: 0;
+    position: absolute;
+	left: 50%;
+	-ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+	background-color: white;
+    color: black;
+	outline: none;
+}
 
 .topnav {
   background-color: #00a0c2;
@@ -46,7 +61,26 @@ h3 {
   background-color: #00add1;
   color: white;
 }
+/* project thumb styles  */
+.project {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 10px;
+  border-radius: 10px;
+  border-color: #000000;
+  margin-top: 10px;
+}
 
+.project:hover {
+  margin-top: 5px;
+  border-width: 15px;
+  border-radius: 15px;
+  border-color: #2b2b2b;
+}
+
+/* end of project thumb styles  */
 ::-webkit-scrollbar {
   width: 10px;
 }
