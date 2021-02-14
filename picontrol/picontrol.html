@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+	<head>
+		<title>Raspberry pi control</title>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<style>
+			.title {
+				font-size: 4em;
+				text-align: center;
+				font-family: Monospace;
+			}
+            .red {
+                background-color: red;
+                display: inline-block;
+                border: none;
+                color: white;
+                padding: 2.5% 5%;
+                font-size: 60px;
+            }
+            .off {
+                margin-top: 10px;
+                background-color: rgb(0, 0, 0);
+                display: inline-block;
+                border: none;
+                color: white;
+                padding: 2.5% 5%;
+                font-size: 60px;
+            }
+            .green {
+                background-color: green;
+                display: inline-block;
+                border: none;
+                color: white;
+                padding: 2.5% 5%;
+                font-size: 60px;
+            }
+            .blue {
+                background-color: blue;
+                display: inline-block;
+                border: none;
+                color: white;
+                padding: 2.5% 5%;
+                font-size: 60px;
+            }
+            .buttons {
+                text-align: center;
+            }
+		</style>
+	</head>
+	<body onload="loaded();">
+		<script src="main.js"></script>
+		
+		<p class="title">Control my raspberry pi, because why not</p>
+        <div class="buttons">
+            <button onclick="red();" class="red">Red</button>
+            <button onclick="green();" class="green">Green</button>
+            <button onclick="blue();" class="blue">Blue</button>
+        </div>
+        <div class="buttons">
+            <button onclick="off();" class="off">Off</button>
+        </div>       
+        <div class="buttons">
+            <p class="title">Temperature:</p>
+        </div>
+        <div class="buttons">
+            <p id='temp'></p>
+        </div> 
+	</body>
+</html>
