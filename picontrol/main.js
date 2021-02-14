@@ -1,6 +1,6 @@
 function loaded() {
 	setInterval(pingtemp,5000);
-	socket = new WebSocket("ws://69.128.37.244:41121")
+	socket = new WebSocket("ws://69.128.37.244:41122")
 	socket.onopen = function(e) {
 		console.log("connected!");
 		pingtemp();
