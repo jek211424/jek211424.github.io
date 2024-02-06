@@ -1,0 +1,83 @@
+/* ./public/style.css */
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    background: #eee;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    width: calc(100% - 50px);
+    max-width: 1500px;
+    margin: 0 auto;
+    font-family: Helvetica, Arial, Sans, sans-serif;
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 32px;
+  }
+  
+  .chat {
+    content: '';
+    width: 100%;
+    height: calc(100vh - 165px);
+    background: white;
+    padding: 5px 10px;
+    overflow: auto
+  }
+  
+  .chat p {
+    margin: 0 0 5px 0;
+  }
+  
+  #message, #send, #roomselect {
+    font: inherit;
+    background: #fff;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  #message, #send {
+    width: 100%;
+  }
+
+  #roomselect {
+    width: 200px;
+  }
+  
+  #send:hover {
+    cursor: pointer;
+    background: #ddd;
+  }
+
+  .system {
+    color: grey;
+  }
+  .warning {
+    font-weight: bold;
+    color: rgb(255, 217, 0);
+  }
+  
+  @media all and (min-width: 500px) {
+    .chat {
+      height: calc(100vh - 160px);
+    }
+  
+    #message {
+      width: calc(100% - 160px);
+    }
+  
+    #send {
+      float: right;
+      width: 150px;
+    }
+  }
